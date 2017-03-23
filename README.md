@@ -71,8 +71,11 @@ David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to p
 
 <div>
   <div>
-    <img src="image/hashtag_proportion.png">
-   </div>
+    <img src="image/hashtag.png">
+  </div>
+  <div>
+    It turns out that the difference between the usage of link and media are extremely different. Tweets from the iPhone were 46 times as likely to contain either media or a link. 
+  </div>
 </div>
 
 ### Sentiment Analysis
