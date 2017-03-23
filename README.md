@@ -45,15 +45,6 @@ David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to p
 
 <div>
   <div>
-    <img src="at.jpg">
-  </div>
-  <div>
-    Another behavior in twittering is to "@" other users. More tweets from Android contain "@" than iPhone.
-  </div>
-</div>
-
-<div>
-  <div>
     <img src="link.jpg">
   </div>
   <div>
