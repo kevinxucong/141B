@@ -19,10 +19,11 @@ Since Twitter API is protected by OAuth(unlike the fully opened API we have work
 ### Visualization
 During this period, Trump participated and won the election in the end. Almost all the big events are listed in this [timeline](https://en.wikipedia.org/wiki/United_States_presidential_election,_2016_timeline#May_2016).
 
-Considering the large amount of tweets he has posted until now, we plotted his daily tweet numbers through the timeline. And we figured out some special dates when he posted extremely frequently. Compared with this timeline, we could see that all of them are related to important TV debates, including president debates and vice president debate. They're labeled in the graph clearly. As we all know, these debates have plenty of public attention. Trump grasped these key moments to raise his popularity and influence on American public further by increasing the numbers of his tweets.
+Considering the large amount of tweets he has posted until now, we plotted his daily tweet numbers through the timeline. And we figured out some special dates when he posted extremely frequently.
 
 ![daily twitter number](image/daily-twitter-number.png)
-
+Compared with this timeline, we could see that all of them are related to important TV debates, including president debates and vice president debate. They're labeled in the graph clearly. As we all know, these debates have plenty of public attention. Trump grasped these key moments to raise his popularity and influence on American public further by increasing the numbers of his tweets.
+ 
 We also visualized data after splitting the data set into android and iPhone two parts. To compare the public attention between them, we compare the hourly favorite and retweet numbers.
 
 ![hour](image/hourly_comparison.png)
@@ -41,6 +42,14 @@ David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to p
   </div>
 </div>
 
+<div>
+  <div>
+    <img src="image/hashtag.png">
+   </div>
+   <div>
+   As we see, the top hashtag topics are not so differnt among differnt sources. The most often used hashtag topics are basically about trump's campaign slogan Makea America Great Again(or MAGA) and election(Trump2016), suggesting certain degree of consistency here.
+   </div>
+</div>
 
 <div>
   <div>
@@ -69,14 +78,7 @@ David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to p
   </div>
 </div>
 
-<div>
-  <div>
-    <img src="image/hashtag.png">
-   </div>
-   <div>
-   As we see, the top hashtag topics are not so differnt among differnt sources. The most often used hashtag topics are basically about trump's campaign slogan Makea America Great Again(or MAGA) and election(Trump2016), suggesting certain degree of consistency here.
-   </div>
-</div>
+
 
 ### Sentiment Analysis
 First based on a corpus called "sentiwordnet" in module nltk, we are able to find the positive/negative score for each word.
