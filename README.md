@@ -26,7 +26,10 @@ Considering the large amount of tweets he has posted until now, we plotted his d
 Compared with this timeline, we could see that all of them are related to important TV debates, including president debates and vice president debate. They're labeled in the graph clearly. As we all know, these debates have plenty of public attention. Trump grasped these key moments to raise his popularity and influence on American public further by increasing the numbers of his tweets.
  
 We also visualized data after splitting the data set into android and iPhone two parts. To compare the public attention between them, we compare the hourly favorite and retweet numbers.
+
 ![hour1](image/hourly-twitter-compare-2.png)
+
+Android tends to tweet during 7:00 am to 9:00 am but tweets from iPhone are cluster at 15:00 to 18:00 and 21:00 to 22:00. The peak times of different sources have significant differences.
 
 ![hour](image/hourly_comparison.png)
 
