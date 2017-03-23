@@ -74,7 +74,7 @@ David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to p
     <img src="image/hashtag.png">
   </div>
   <div>
-    It turns out that the difference between the usage of link and media are extremely different. Tweets from the iPhone were 46 times as likely to contain either media or a link. 
+ The most popular tags are similar but the number of tags of android and iPhone are not in the same scale.
   </div>
 </div>
 
