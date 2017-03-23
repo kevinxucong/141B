@@ -96,6 +96,7 @@ So we can find whether one tweet is positive or negative.
 </table>
 The proportion of negative tweets from Android(40.8%) are much higher than that for iPhone(26.5%). Then we apply chi-square test.
 We find that the difference is signifiant. (p-value = 2.23e-86)
+
 We use Obama's tweets as a comparison. The proportion of negative tweets is 25.1%. The proportion of Trump's iPhone is close to Obama's. However, Trump's Android is extremely high.
 
 
