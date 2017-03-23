@@ -40,7 +40,6 @@ David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to p
   </div>
 </div>
 
-<div>
 
 <div>
   <div>
@@ -74,9 +73,10 @@ David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to p
     <img src="image/hashtag.png">
   </div>
   <div>
- The most popular tags are similar but the number of tags of android and iPhone are not in the same scale.
+ As we see, the top hashtag topics are not so differnt among differnt sources. The most often used hashtag topics are basically about trump's campaign slogan Makea America Great Again(or MAGA) and election(Trump2016), suggesting certain degree of consistency here.
   </div>
 </div>
+
 
 ### Sentiment Analysis
 First based on a corpus called "sentiwordnet" in module nltk, we are able to find the positive/negative score for each word.
@@ -113,6 +113,7 @@ We find that the difference is signifiant. (p-value = 2.23e-86)
 
 We use Obama's tweets as a comparison. The proportion of negative tweets is 25.1%. The proportion of Trump's iPhone is close to Obama's. However, Trump's Android is extremely high.
 
+## 
 ## More Results
 Also, for Trump, we want to see whether his tweets' ratio of negative change over times.
 <img src="image/Ratio.png">
