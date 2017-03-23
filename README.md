@@ -68,10 +68,9 @@ David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to p
 </div>
 
 <div>
-  <div>
     <img src="image/hashtag_proportion.png">
-   </div>
 </div>
+
 
 ### Sentiment Analysis
 First based on a corpus called "sentiwordnet" in module nltk, we are able to find the positive/negative score for each word.
