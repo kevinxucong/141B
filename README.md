@@ -1,11 +1,11 @@
 Extract the tweets of Donald J. Trump (@realDonaldTrump). Analyze his tweeting style by visualization. Specifically, we find that the [work](http://varianceexplained.org/r/trump-tweets/) by David Robinson inspiring. Based on his conclusion, we move further to analyze Trump himself's twitting style.
 
 ## Basic Idea:
-David Robinson has showed us great work analyzing Trump’s tweet data. Enlighted by this, we also want to do some research about this problem from other aspects. Expect text itself,there are also other important features of tweet data which show interesting inference of his personality and tweeting style.
+David Robinson has showed us great work analyzing Trump’s tweet data. Enlighted by this, we also want to do some research about this problem from other aspects. Except tweet contents themselves,there are also other important features of tweet data which show interesting inference of his personality and tweeting style.
 
- Firstly, We are really interested in the general time pattern of trump’s tweets. Generally speaking, we want to analyze his tweeting frequency with date and try to find the peaks in it. Presumably, the date of this tweeting peaks should correspond to some particular political event. And the plots and other results here actually confirmed our assumption 
+Firstly, We are really interested in the general time pattern of trump’s tweets. Generally speaking, we want to analyze his tweeting frequency with date and try to find the peaks in it. Presumably, the dates of this tweeting peaks should correspond to some particular political event. And the plots and other results here actually confirmed our assumptions. 
 
- On the other hand, we also want to study the difference of the tweeting time pattern and tweeting style of tweets from different data source. Through comparing the time pattern and tweeting style, we want to identify whether or not tweets from different source are actually tweeted by different people. Also data analysis about hashtags and users mentioned in tweets provides supporting details and evidence
+On the other hand, we also want to study the difference of the tweeting time pattern and tweeting style of tweets from different data source. Through comparing the time pattern and tweeting style, we want to identify whether or not tweets from different source are actually tweeted by different people. Also data analysis about hashtags and users mentioned in tweets provides supporting details and evidence.
 
 ## Data Description
 By [twitter API](https://dev.twitter.com/overview/api), we use [Tweepy](http://tweepy.readthedocs.io/en/v3.5.0/) to get the tweeters of a single user. Details of data set are in the [data book](databook.pdf)
@@ -13,12 +13,13 @@ By [twitter API](https://dev.twitter.com/overview/api), we use [Tweepy](http://t
 ### Data Acquirement
 
 As one of the most popular social platform in the world, Twitter provides developers with powerful API to acquire and analyze tweet data. In this project, we use Python module Tweepy to get data from twitter API.
-Since Twitter API is protected by OAuth(unlike the fully opened API we have worked with in class), we firstly registered a twitter development account and get the authorized key and secret from twitter and then get the tweets data from web. Considering the efficiency and interpretation of data, we only extracted interested data(details see in databook). Also, because of the constraint of the API, only the most recent 3200 tweets of one user are available so the size of our dataset is around 3200 and dated back to around Trump's tweet in 2016-3-27.
+
+Since Twitter API is protected by OAuth(unlike the fully opened API we have worked with in class), we firstly registered a twitter development account and get the authorized key and secret from twitter and then got the tweet data from web. Considering the efficiency and interpretation of data, we only extracted interested data(details see in databook). Also, because of the constraint of the API, only the most recent 3200 tweets of one user are available so the size of our dataset is around 3200 and dated back to around Trump's tweet in Mar 27, 2016.
 
 ### Visualization
 During this period, Trump participated and won the election in the end. Almost all the big events are listed in this [timeline](https://en.wikipedia.org/wiki/United_States_presidential_election,_2016_timeline#May_2016).
 
-Considering the large amount of tweets he has posted until now, we plotted his daily tweet numbers through the timeline. And we figured out some special dates when he posted extremely frequently. Compared with this timeline, we could see that all of them are related to important TV debates, including president debates and vice president debate. They're labeled in the graph clearly. As we all know, these debates have plenty of public attention. Trump grasped these key moment to raise his popularity and influence on American public further by increasing the numbers of his tweets.
+Considering the large amount of tweets he has posted until now, we plotted his daily tweet numbers through the timeline. And we figured out some special dates when he posted extremely frequently. Compared with this timeline, we could see that all of them are related to important TV debates, including president debates and vice president debate. They're labeled in the graph clearly. As we all know, these debates have plenty of public attention. Trump grasped these key moments to raise his popularity and influence on American public further by increasing the numbers of his tweets.
 
 ![daily twitter number](image/daily-twitter-number.png)
 
@@ -29,7 +30,7 @@ We also visualized data after splitting the data set into android and iPhone two
 After removing the effect of tweet numbers, we may see that their patterns seems similar to each other. Information from Android sources received a little more attention than iPhone after the morning time, which is surprisingly opposite with the tweet number situation. And in the morning, tweets attraction are relatively alike.
 
 ## Android and iPhone
-David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to prove that for Trump, the Android and iPhone tweets are clearly from different people.
+David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to prove that for Trump, the Android and iPhone tweets are clearly from different people. Here, we 
 
 <div>
   <div>
@@ -40,6 +41,7 @@ David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to p
   </div>
 </div>
 
+<div>
 
 <div>
   <div>
@@ -70,13 +72,9 @@ David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to p
 
 <div>
   <div>
-    <img src="image/hashtag.png">
-  </div>
-  <div>
- As we see, the top hashtag topics are not so differnt among differnt sources. The most often used hashtag topics are basically about trump's campaign slogan Makea America Great Again(or MAGA) and election(Trump2016), suggesting certain degree of consistency here.
-  </div>
+    <img src="image/hashtag_proportion.png">
+   </div>
 </div>
-
 
 ### Sentiment Analysis
 First based on a corpus called "sentiwordnet" in module nltk, we are able to find the positive/negative score for each word.
@@ -112,16 +110,6 @@ The proportion of negative tweets from Android(40.8%) are much higher than that 
 We find that the difference is signifiant. (p-value = 2.23e-86)
 
 We use Obama's tweets as a comparison. The proportion of negative tweets is 25.1%. The proportion of Trump's iPhone is close to Obama's. However, Trump's Android is extremely high.
-
-## Strong self-consciousness
-<div>
-  <div>
-    <img src="image/user_mention.png">
-  </div>
-  <div>
-Trump mentioned himself far more often than others,suggesting strong self-consciousness. Also, we noticed that twitter from android mentioned himself even more. Based on previous analysis, we know that android tweets are mostly from trump himsself, which makes perfect sense here because it reflects his personal language style.
-  </div>
-</div>
 
 ## More Results
 Also, for Trump, we want to see whether his tweets' ratio of negative change over times.
