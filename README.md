@@ -4,6 +4,20 @@ Extract the tweets of Donald J. Trump (@realDonaldTrump). Analyze his tweeting s
 By [twitter API](https://dev.twitter.com/overview/api), we use [Tweepy](http://tweepy.readthedocs.io/en/v3.5.0/) to get the tweeters of a single user. Details of data set are in the [data book](databook.pdf)
 
 
+### basic idea:
+David Robinson has showed us great work analyzing Trump’s tweet data. Enlighted by this, we also want to do some research about this problem from other aspects. Expect text itself,there are also other important features of tweet data which show interesting inference of his personality and tweeting style.
+
+ Firstly, We are really interested in the general time pattern of trump’s tweets. Generally speaking, we want to analyze his tweeting frequency with date and try to find the peaks in it. Presumably, the date of this tweeting peaks should correspond to some particular political event. And the plots and other results here actually confirmed our assumption 
+
+
+ On the other hand, we also want to study the difference of the tweeting time pattern and tweeting style of tweets from different data source. Through comparing the time pattern and tweeting style, we want to identify whether or not tweets from different source are actually tweeted by different people. Also data analysis about hashtags and users mentioned in tweets provides supporting details and evidence
+
+
+
+
+
+
+
 ### Data Acquirement
 
 As one of the most popular social platform in the world, Twitter provides developers with powerful API to acquire and analyze tweet data. In this project, we use Python module Tweepy to get data from twitter API.
