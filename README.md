@@ -31,7 +31,7 @@ We also visualized data after splitting the data set into android and iPhone two
 After removing the effect of tweet numbers, we may see that their patterns seems similar to each other. Information from Android sources received a little more attention than iPhone after the morning time, which is surprisingly opposite with the tweet number situation. And in the morning, tweets attraction are relatively alike.
 
 ## Android and iPhone
-David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to prove that for Trump, the Android and iPhone tweets are clearly from different people. Here, we 
+David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to prove that for Trump, the Android and iPhone tweets are clearly from different people. Here, we find more aspects to illustrate this assumption.
 
 <div>
   <div>
