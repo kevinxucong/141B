@@ -16,11 +16,9 @@ As one of the most popular social platform in the world, Twitter provides develo
 Since Twitter API is protected by OAuth(unlike the fully opened API we have worked with in class), we firstly registered a twitter development account and get the authorized key and secret from twitter and then get the tweets data from web. Considering the efficiency and interpretation of data, we only extracted interested data(details see in databook). Also, because of the constraint of the API, only the most recent 3200 tweets of one user are available so the size of our dataset is around 3200 and dated back to around Trump's tweet in 2016-3-27.
 
 ### Visualization
-During this period, Trump participated and won the election in the end. Almost all the big events are listed in this [timeline](https://en.wikipedia.org/wiki/United_States_presidential_election,_2016_timeline#May_2016).
+During this period, Trump participated election. Almost all the big events are listed in this [timeline](https://en.wikipedia.org/wiki/United_States_presidential_election,_2016_timeline#May_2016).
 
 ![daily twitter number](image/daily-twitter-number.png)
-
-Considering the large amount of tweets he has posted until now, we plotted his daily tweet numbers through the timeline. And we figured out some special dates when he posted extremely frequently. Compared with this timeline, we could see that all of them are related to important TV debates, including president debates and vice president debate. They're labeled in the graph clearly. As we all know, these debates have plenty of public attention. Trump grasped these key moment to raise his popularity and influence on American public further by increasing the numbers of his tweets.
 
 After reading the website of David Robinson, we try to find more evidence to verify the conclusion that tweets from android and iPhone are from different person. Thus we visualized data after splitting the data set into android and iPhone two parts. 
 ![hour](image/hourly_comparison.png)
@@ -101,5 +99,16 @@ We find that the difference is signifiant. (p-value = 2.23e-86)
 
 We use Obama's tweets as a comparison. The proportion of negative tweets is 25.1%. The proportion of Trump's iPhone is close to Obama's. However, Trump's Android is extremely high.
 
-
-
+## More Results
+Also, for Trump, we want to see whether his tweets' ratio of negative change over times.
+<img src="image/ratio">
+Based on these two Twitter source (Android and iPhone), we make a plot of the ratio of negative tweets and the total among of tweets in each week. In the time points when there is a peak of negative ratio of Android, we can find some events corresponing to them.
+- 2016-05-09: Twitter war between Trump and Elizabeth Warren.
+- 2016-07-02: Hillary Clinton's corruption scandal.
+- 2016-07-12: Trump attacked Justice Ruth Bader Ginsburg.
+- 2016-07-23: Wikileaks leaked 20000 emails revealed a bias against Bernie Sanders from the Democatic Party. 
+- 2016-09-09: Hillary's "Basket Of Deplorables"
+- 2016-10-07: Sexual misconduct accusations against Trump.
+- 2017-01-09: Meryl Streep's speech.
+- 2017-01-20: Inauguration.
+- 2017-02-13: Michael Flynn resigned.
