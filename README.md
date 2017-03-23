@@ -16,7 +16,7 @@ David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to p
 
 <div>
   <div>
-    <img src="hashtag.jpg">
+    <img src="image/hashtag.png">
   </div>
   <div>
     Most of the hashtags are from iPhone. Actually tweets from the iPhone were 12 times more likely to contain a hashtag compared with Android.
@@ -27,7 +27,7 @@ David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to p
 
 <div>
   <div>
-    <img src="quoted.jpg">
+    <img src="image/quoted.png">
   </div>
   <div>
     On the other hand, most of the quoted tweets are posted from the Android.
@@ -36,7 +36,7 @@ David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to p
 
 <div>
   <div>
-    <img src="at.jpg">
+    <img src="image/at.png">
   </div>
   <div>
     Another behavior in twittering is to "@" other users. More tweets from Android contain "@" than iPhone.
@@ -45,7 +45,7 @@ David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to p
 
 <div>
   <div>
-    <img src="link.jpg">
+    <img src="image/link.png">
   </div>
   <div>
     It turns out that the difference between the usage of link and media are extremely different. Tweets from the iPhone were 46 times as likely to contain either media or a link. 
