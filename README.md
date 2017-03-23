@@ -113,7 +113,7 @@ We find that the difference is signifiant. (p-value = 2.23e-86)
 
 We use Obama's tweets as a comparison. The proportion of negative tweets is 25.1%. The proportion of Trump's iPhone is close to Obama's. However, Trump's Android is extremely high.
 
-## Strong selfconsciousness
+## Strong self-consciousness
 <div>
   <div>
     <img src="image/user_mention.png">
