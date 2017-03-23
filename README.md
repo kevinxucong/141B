@@ -14,7 +14,7 @@ During this period, Trump participate election. Almost all the big events are li
 
 ![daily twitter number](image/daily-twitter-number.png)
 
-![hour](image/hourly comparison.png)
+![hour](image/hourly_comparison.png)
 ## Android and iPhone
 David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to prove that for Trump, the Android and iPhone tweets are clearly from different people.
 
