@@ -16,7 +16,7 @@ David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to p
 
 <div>
   <div>
-    <img src="image/hashtag.png">
+    <img src="image/hashtag_proportion.png">
   </div>
   <div>
     Most of the hashtags are from iPhone. Actually tweets from the iPhone were 12 times more likely to contain a hashtag compared with Android.
