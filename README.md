@@ -1,9 +1,9 @@
 Extract the tweets of Donald J. Trump (@realDonaldTrump). Analyze his tweeting style by visualization. Specifically, we find that the [work](http://varianceexplained.org/r/trump-tweets/) by David Robinson inspiring. Based on his conclusion, we move further to analyze Trump himself's twitting style.
 
 ## Basic Idea:
-David Robinson has showed us great work analyzing Trump’s tweet data. Enlighted by this, we also want to do some research about this problem from other aspects. Except tweet contents themselves,there are also other important features of tweet data which show interesting inference of his personality and tweeting style.
+David Robinson has showed us great work analyzing Trump’s tweet data. Enlighted by this, we also want to do some research about this problem from other aspects. Except tweet contents themselves, there are also other important features of tweet data which show interesting inference of his personality and tweeting style.
 
-Firstly, We are really interested in the general time pattern of trump’s tweets. Generally speaking, we want to analyze his tweeting frequency with date and try to find the peaks in it. Presumably, the dates of this tweeting peaks should correspond to some particular political event. And the plots and other results here actually confirmed our assumptions. 
+Firstly, We are really interested in the general time pattern of Trump’s tweets. Generally speaking, we want to analyze his tweeting frequency with date and try to find the peaks in it. Presumably, the dates of this tweeting peaks should correspond to some particular political event. And the plots and other results here actually confirmed our assumptions. 
 
 On the other hand, we also want to study the difference of the tweeting time pattern and tweeting style of tweets from different data source. Through comparing the time pattern and tweeting style, we want to identify whether or not tweets from different source are actually tweeted by different people. Also data analysis about hashtags and users mentioned in tweets provides supporting details and evidence.
 
@@ -154,6 +154,7 @@ Usually the person who use more first-person singular pronouns will display more
     <td>12.8%</td>
   </tr>
 </table>
+
 The large proportion for Trump in Android illustrates his strong self-consciousness.
 
 ## More Results
