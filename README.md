@@ -119,10 +119,34 @@ We use Obama's tweets as a comparison. The proportion of negative tweets is 25.1
     <img src="image/user_mention.png">
    </div>
    <div>
-Trump mentioned himself far more often than others,suggesting strong self-consciousness. Also, we noticed that twitter from android mentioned himself even more. Based on previous analysis, we know that android tweets are mostly from trump himsself, which makes perfect sense here because it reflects his personal language style.
+Trump mentioned himself far more often than others,suggesting strong self-consciousness. Also, we noticed that twitter from android mentioned himself even more. Based on previous analysis, we know that android tweets are mostly from trump himself, which makes perfect sense here because it reflects his personal language style.
    </div>
 </div>
 
+### First-person Singular Pronouns
+Usually the person who use more first-person singular pronouns will display more self-consciousness. We define that if a tweet contains "I", "me", "my", "mine" and "myself", then it is a "self-consciousness tweet". Then we get the proportions of self-consciousness tweets for Trump and other politicans.
+
+<table width=50%>
+  <tr>
+    <th> </th>
+    <th>Trump (Android)</th> 
+    <th>Trump (iPhone)</th>
+    <th>Hillary Clinton</th>
+    <th>Bernie Sanders</th>
+    <th>Ted Cruz</th>
+    <th>John Mccain</th>
+  </tr>
+  <tr>
+    <td>Proportion of Self-consciousness Tweets</td>
+    <td>26.2%</td> 
+    <td>19.6%</td>
+    <td>9.1%</td>
+    <td>9.1%</td>
+    <td>8.9%</td>
+    <td>12.8%</td>
+  </tr>
+</table>
+The large proportion for Trump in Android illustrates his strong self-consciousness.
 
 ## More Results
 Also, for Trump, we want to see whether his tweets' ratio of negative change over times.
