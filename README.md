@@ -101,7 +101,7 @@ We use Obama's tweets as a comparison. The proportion of negative tweets is 25.1
 
 ## More Results
 Also, for Trump, we want to see whether his tweets' ratio of negative change over times.
-<img src="image/ratio">
+<img src="image/Ratio">
 Based on these two Twitter source (Android and iPhone), we make a plot of the ratio of negative tweets and the total among of tweets in each week. In the time points when there is a peak of negative ratio of Android, we can find some events corresponing to them.
 - 2016-05-09: Twitter war between Trump and Elizabeth Warren.
 - 2016-07-02: Hillary Clinton's corruption scandal.
