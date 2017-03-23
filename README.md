@@ -134,7 +134,7 @@ Trump mentioned himself far more often than others,suggesting strong self-consci
 ### First-person Singular Pronouns
 Usually the person who use more first-person singular pronouns will display more self-consciousness. We define that if a tweet contains "I", "me", "my", "mine" and "myself", then it is a "self-consciousness tweet". Then we get the proportions of self-consciousness tweets for Trump and other politicans.
 
-<table width=50%>
+<table style="width:80%">
   <tr>
     <th> </th>
     <th>Trump (Android)</th> 
