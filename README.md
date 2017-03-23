@@ -64,6 +64,12 @@ David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to p
   </div>
 </div>
 
+<div>
+  <div>
+    <img src="image/hashtag_proportion.png">
+   </div>
+</div>
+
 ### Sentiment Analysis
 First based on a corpus called "sentiwordnet" in module nltk, we are able to find the positive/negative score for each word.
 Then we define a function to get the average the scores for all the words(delete stopwords at first) in a tweet text. 
