@@ -41,7 +41,6 @@ David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to p
   </div>
 </div>
 
-<div>
 
 <div>
   <div>
@@ -72,7 +71,10 @@ David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to p
 
 <div>
   <div>
-    <img src="image/hashtag_proportion.png">
+    <img src="image/hashtag.png">
+   </div>
+   <div>
+   As we see, the top hashtag topics are not so differnt among differnt sources. The most often used hashtag topics are basically about trump's campaign slogan Makea America Great Again(or MAGA) and election(Trump2016), suggesting certain degree of consistency here.
    </div>
 </div>
 
@@ -110,6 +112,17 @@ The proportion of negative tweets from Android(40.8%) are much higher than that 
 We find that the difference is signifiant. (p-value = 2.23e-86)
 
 We use Obama's tweets as a comparison. The proportion of negative tweets is 25.1%. The proportion of Trump's iPhone is close to Obama's. However, Trump's Android is extremely high.
+
+## Strong Self-consciousness
+<div>
+  <div>
+    <img src="image/user_mention.png">
+   </div>
+   <div>
+Trump mentioned himself far more often than others,suggesting strong self-consciousness. Also, we noticed that twitter from android mentioned himself even more. Based on previous analysis, we know that android tweets are mostly from trump himsself, which makes perfect sense here because it reflects his personal language style.
+   </div>
+</div>
+
 
 ## More Results
 Also, for Trump, we want to see whether his tweets' ratio of negative change over times.
