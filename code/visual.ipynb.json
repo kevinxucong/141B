@@ -1,0 +1,183 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "difference = datetime.timedelta(hours=-4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "trump[\"created_time\"] = [datetime.datetime.strptime(trump[\"created_time\"].iloc[i],\"%m/%d/%y %H:%M\") for i in xrange(trump.shape[0])]\n",
+    "trump[\"created_time\"] = [x+difference for x in trump[\"created_time\"]]\n",
+    "date = [d.date() for d in trump[\"created_time\"]]\n",
+    "date = pd.DataFrame(date)\n",
+    "date.columns=[\"date\"]\n",
+    "hour = pd.DataFrame([d.hour for d in trump[\"created_time\"]])\n",
+    "hour.columns=[\"hour\"]\n",
+    "trumpdata = pd.concat([trump,date,hour],axis=1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "n,_=trump.shape\n",
+    "android = trumpdata[trumpdata[\"source\"]==\"Twitter for Android\"]\n",
+    "iphone = trumpdata[trumpdata[\"source\"]==\"Twitter for iPhone\"]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "plt.rcParams['figure.figsize'] = (12, 10)\n",
+    "ax = plt.subplot()\n",
+    "ax.bar(trumpdata.groupby(\"date\").count().index, trumpdata.groupby(\"date\").count()[\"created_time\"])\n",
+    "ax.autoscale(tight=True)\n",
+    "ax.set_xlabel(\"date\")\n",
+    "ax.set_ylabel(\"twitter number\")\n",
+    "ax.set_xticklabels([])\n",
+    "ax.set_title(\"Trump's daily twitter number (03/27/2016 - 03/23/2017)\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "plt.rcParams['figure.figsize'] = (6, 4)\n",
+    "fig, ax = plt.subplots()\n",
+    "index = np.arange(24)\n",
+    "bar_width = 0.5\n",
+    "\n",
+    "number_iphone = iphone.groupby(\"hour\").count()[\"created_time\"]\n",
+    "number_android = android.groupby(\"hour\").count()[\"created_time\"]\n",
+    "\n",
+    "opacity = 0.5\n",
+    "error_config = {'ecolor': '0.3'}\n",
+    "\n",
+    "rects1 = plt.plot(iphone.groupby(\"hour\").count().index, number_iphone,\n",
+    "                 color='b',\n",
+    "                 label='iPhone')\n",
+    "\n",
+    "rects2 = plt.plot(android.groupby(\"hour\").count().index, number_android,\n",
+    "                 color='r',\n",
+    "                 label='Android')\n",
+    "\n",
+    "plt.xlabel('hour',size=10)\n",
+    "plt.ylabel('Number of tweets',size=10)\n",
+    "plt.title('Hourly Twitter Number Comparison',size=12)\n",
+    "plt.legend(prop={\"size\":10})\n",
+    "plt.xlim([0,24])\n",
+    "\n",
+    "plt.tight_layout()\n",
+    "plt.show()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "number_iphone = iphone.groupby(\"hour\").mean()[\"favorite_count\"]\n",
+    "number_android = android.groupby(\"hour\").mean()[\"favorite_count\"]\n",
+    "\n",
+    "opacity = 0.5\n",
+    "error_config = {'ecolor': '0.3'}\n",
+    "\n",
+    "rects1 = plt.plot(iphone.groupby(\"hour\").count().index, number_iphone,\n",
+    "                 color='b',\n",
+    "                 label='iPhone')\n",
+    "\n",
+    "rects2 = plt.plot(android.groupby(\"hour\").count().index, number_android,\n",
+    "                 color='r',\n",
+    "                 label='Android')\n",
+    "\n",
+    "plt.xlabel('hour',size=18)\n",
+    "plt.ylabel('Number of Favorite',size=18)\n",
+    "plt.title('Hourly favorite Number Comparison',size=24)\n",
+    "plt.legend(prop={\"size\":18})\n",
+    "plt.xlim([0,24])\n",
+    "\n",
+    "plt.tight_layout()\n",
+    "plt.show()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "number_iphone = iphone.groupby(\"hour\").mean()[\"retweet_count\"]\n",
+    "number_android = android.groupby(\"hour\").mean()[\"retweet_count\"]\n",
+    "\n",
+    "rects1 = plt.plot(iphone.groupby(\"hour\").count().index, number_iphone,\n",
+    "                 color='b',\n",
+    "                 label='iPhone')\n",
+    "\n",
+    "rects2 = plt.plot(android.groupby(\"hour\").count().index, number_android,\n",
+    "                 color='r',\n",
+    "                 label='Android')\n",
+    "\n",
+    "plt.xlabel('hour',size=18)\n",
+    "plt.ylabel('Number of retweet',size=18)\n",
+    "plt.title('Hourly Retweet Number Comparison',size=24)\n",
+    "plt.legend(prop={\"size\":18})\n",
+    "plt.xlim([0,24])\n",
+    "\n",
+    "plt.tight_layout()\n",
+    "plt.show()"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [default]",
+   "language": "python",
+   "name": "python2"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 2
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython2",
+   "version": "2.7.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 1
+}
