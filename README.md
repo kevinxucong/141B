@@ -10,11 +10,13 @@ As one of the most popular social platform in the world, Twitter provides develo
 Since Twitter API is protected by OAuth(unlike the fully opened API we have worked with in class), we firstly registered a twitter development account and get the authorized key and secret from twitter and then get the tweets data from web. Considering the efficiency and interpretation of data, we only extracted interested data(details see in databook). Also, because of the constraint of the API, only the most recent 3200 tweets of one user are available so the size of our dataset is around 3200 and dated back to around Trump's tweet in 2016-3-27.
 
 ### Visualization
-During this period, Trump participate election. Almost all the big events are listed in this [timeline](https://en.wikipedia.org/wiki/United_States_presidential_election,_2016_timeline#May_2016).
+During this period, Trump participated election. Almost all the big events are listed in this [timeline](https://en.wikipedia.org/wiki/United_States_presidential_election,_2016_timeline#May_2016).
 
 ![daily twitter number](image/daily-twitter-number.png)
 
+After reading the website of David Robinson, we try to find more evidence to verify the conclusion that tweets from android and iPhone are from different person. Thus we visualized data after splitting the data set into android and iPhone two parts. 
 ![hour](image/hourly_comparison.png)
+
 ## Android and iPhone
 David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to prove that for Trump, the Android and iPhone tweets are clearly from different people.
 
