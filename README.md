@@ -1,7 +1,7 @@
 Extract the tweets of Donald J. Trump (@realDonaldTrump). Analyze his tweeting style by visualization. Specifically, we find that the [work](http://varianceexplained.org/r/trump-tweets/) by David Robinson inspiring. Based on his conclusion, we move further to analyze Trump himself's twitting style.
 
 ## Data Description
-By [twitter API](https://dev.twitter.com/overview/api), we use [Tweepy](http://tweepy.readthedocs.io/en/v3.5.0/) to get the tweeters of a single user. Details are in the [data book](databook.pdf)
+By [twitter API](https://dev.twitter.com/overview/api), we use [Tweepy](http://tweepy.readthedocs.io/en/v3.5.0/) to get the tweeters of a single user. Details of data set are in the [data book](databook.pdf)
 
 
 ### Data Acquirement
@@ -11,6 +11,8 @@ Since Twitter API is protected by OAuth(unlike the fully opened API we have work
 
 ### Visualization
 During this period, Trump participate election. Almost all the big events are listed in this [timeline](https://en.wikipedia.org/wiki/United_States_presidential_election,_2016_timeline#May_2016).
+
+![daily twitter number](image/daily_twitter_number.png)
 ## Android and iPhone
 David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to prove that for Trump, the Android and iPhone tweets are clearly from different people.
 
