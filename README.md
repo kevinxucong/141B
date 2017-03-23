@@ -13,6 +13,8 @@ Since Twitter API is protected by OAuth(unlike the fully opened API we have work
 During this period, Trump participate election. Almost all the big events are listed in this [timeline](https://en.wikipedia.org/wiki/United_States_presidential_election,_2016_timeline#May_2016).
 
 ![daily twitter number](image/daily-twitter-number.png)
+
+![hour](image/hourly comparison.png)
 ## Android and iPhone
 David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to prove that for Trump, the Android and iPhone tweets are clearly from different people.
 
