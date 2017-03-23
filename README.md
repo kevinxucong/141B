@@ -20,7 +20,10 @@ During this period, Trump participated election. Almost all the big events are l
 
 ![daily twitter number](image/daily-twitter-number.png)
 
-After reading the website of David Robinson, we try to find more evidence to verify the conclusion that tweets from android and iPhone are from different person. Thus we visualized data after splitting the data set into android and iPhone two parts. 
+After reading the website of David Robinson, we try to find more evidence to verify the conclusion that tweets from android and iPhone are from different person. Thus we visualized data after splitting the data set into android and iPhone two parts.
+
+To compare the public attention between them, we also compare the hourly favorite and retweet numbers. After removing the effect of tweet numbers, we may see that their patterns seems similar to each other. Information from Android sources received a little more attention than iPhone after the morning time, which is surprisingly opposite with the tweet number situation. And in the morning, tweets attraction are relatively alike.
+
 ![hour](image/hourly_comparison.png)
 
 ## Android and iPhone
