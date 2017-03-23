@@ -64,5 +64,39 @@ David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to p
   </div>
 </div>
 
+### Sentiment Analysis
+First based on a corpus called "sentiwordnet" in module nltk, we are able to find the positive/negative score for each word.
+Then we define a function to get the average the scores for all the words(delete stopwords at first) in a tweet text. 
+So we can find whether one tweet is positive or negative.
+<table style="width:50%">
+  <tr>
+    <th>source</th>
+    <th>Twitter for Android</th> 
+    <th>Twitter for iPhone</th>
+    <th>All</th>
+  </tr>
+  <tr>
+    <td>positive</td>
+    <td>839</td> 
+    <td>1123</td>
+    <td>1962</td>
+  </tr>
+  <tr>
+    <td>negative</td>
+    <td>579</td> 
+    <td>405</td>
+    <td>984</td>
+  </tr>
+  <tr>
+    <td>All</td>
+    <td>1418</td>
+    <td>1528</td>
+    <td>2946</td>
+  </tr>
+</table>
+The proportion of negative tweets from Android(40.8%) are much higher than that for iPhone(26.5%). Then we apply chi-square test.
+We find that the difference is signifiant. (p-value = 2.23e-86)
+We use Obama's tweets as a comparison. The proportion of negative tweets is 25.1%. The proportion of Trump's iPhone is close to Obama's. However, Trump's Android is extremely high.
+
 
 
