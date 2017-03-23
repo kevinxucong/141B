@@ -16,15 +16,17 @@ As one of the most popular social platform in the world, Twitter provides develo
 Since Twitter API is protected by OAuth(unlike the fully opened API we have worked with in class), we firstly registered a twitter development account and get the authorized key and secret from twitter and then get the tweets data from web. Considering the efficiency and interpretation of data, we only extracted interested data(details see in databook). Also, because of the constraint of the API, only the most recent 3200 tweets of one user are available so the size of our dataset is around 3200 and dated back to around Trump's tweet in 2016-3-27.
 
 ### Visualization
-During this period, Trump participated election. Almost all the big events are listed in this [timeline](https://en.wikipedia.org/wiki/United_States_presidential_election,_2016_timeline#May_2016).
+During this period, Trump participated and won the election in the end. Almost all the big events are listed in this [timeline](https://en.wikipedia.org/wiki/United_States_presidential_election,_2016_timeline#May_2016).
+
+Considering the large amount of tweets he has posted until now, we plotted his daily tweet numbers through the timeline. And we figured out some special dates when he posted extremely frequently. Compared with this timeline, we could see that all of them are related to important TV debates, including president debates and vice president debate. They're labeled in the graph clearly. As we all know, these debates have plenty of public attention. Trump grasped these key moment to raise his popularity and influence on American public further by increasing the numbers of his tweets.
 
 ![daily twitter number](image/daily-twitter-number.png)
 
-After reading the website of David Robinson, we try to find more evidence to verify the conclusion that tweets from android and iPhone are from different person. Thus we visualized data after splitting the data set into android and iPhone two parts.
-
-To compare the public attention between them, we also compare the hourly favorite and retweet numbers. After removing the effect of tweet numbers, we may see that their patterns seems similar to each other. Information from Android sources received a little more attention than iPhone after the morning time, which is surprisingly opposite with the tweet number situation. And in the morning, tweets attraction are relatively alike.
+We also visualized data after splitting the data set into android and iPhone two parts. To compare the public attention between them, we compare the hourly favorite and retweet numbers.
 
 ![hour](image/hourly_comparison.png)
+
+After removing the effect of tweet numbers, we may see that their patterns seems similar to each other. Information from Android sources received a little more attention than iPhone after the morning time, which is surprisingly opposite with the tweet number situation. And in the morning, tweets attraction are relatively alike.
 
 ## Android and iPhone
 David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to prove that for Trump, the Android and iPhone tweets are clearly from different people.
@@ -68,9 +70,10 @@ David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to p
 </div>
 
 <div>
+  <div>
     <img src="image/hashtag_proportion.png">
+   </div>
 </div>
-
 
 ### Sentiment Analysis
 First based on a corpus called "sentiwordnet" in module nltk, we are able to find the positive/negative score for each word.
