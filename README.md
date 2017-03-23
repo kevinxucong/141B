@@ -68,7 +68,7 @@ David Robinson's [work](http://varianceexplained.org/r/trump-tweets/) tried to p
 First based on a corpus called "sentiwordnet" in module nltk, we are able to find the positive/negative score for each word.
 Then we define a function to get the average the scores for all the words(delete stopwords at first) in a tweet text. 
 So we can find whether one tweet is positive or negative.
-<table style="width:50%">
+<table style="width:80%">
   <tr>
     <th>source</th>
     <th>Twitter for Android</th> 
